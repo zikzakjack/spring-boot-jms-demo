@@ -16,7 +16,7 @@ public class QueueSender {
 
   private static final Logger logger = LoggerFactory.getLogger(QueueSender.class);
 
-  @Value("${trans.topic}")
+  @Value("${trans.alert.queue}")
   String transTopicName;
 
   JmsTemplate jmsTemplate;

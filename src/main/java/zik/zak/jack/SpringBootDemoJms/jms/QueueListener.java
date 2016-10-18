@@ -28,7 +28,7 @@ public class QueueListener {
     logger.info("Listener is working...");
   }
 
-  @JmsListener(destination = "${trans.topic}")
+  @JmsListener(destination = "${trans.alert.queue}")
   public void receiveMessage(TransactionAlert alert) {
     logger.info("Received <" + alert + ">");
   }
