@@ -1,11 +1,16 @@
 package zik.zak.jack.SpringBootDemoJms.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TransactionAlert {
+public class TransactionAlert implements Serializable {
+
+  private static final long serialVersionUID = -8806522230262847830L;
+
+  public TransactionAlert() {}
 
   public enum TransactionType {
     INVALID(-1), CREDIT(0), DEBIT(1);
