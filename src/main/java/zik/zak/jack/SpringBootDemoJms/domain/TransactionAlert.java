@@ -6,6 +6,12 @@ import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * TransactionAlert domain object
+ * 
+ * @author kalyan
+ *
+ */
 public class TransactionAlert implements Serializable {
 
   private static final long serialVersionUID = -8806522230262847830L;
@@ -30,8 +36,8 @@ public class TransactionAlert implements Serializable {
 
     // Populate the lookup table on loading time
     static {
-      for (TransactionType transaction : EnumSet.allOf(TransactionType.class))
-        lookup.put(transaction.getTransactionCode(), transaction);
+      for (TransactionType transactionType : EnumSet.allOf(TransactionType.class))
+        lookup.put(transactionType.getTransactionCode(), transactionType);
     }
 
     // This method can be used for reverse lookup purpose
