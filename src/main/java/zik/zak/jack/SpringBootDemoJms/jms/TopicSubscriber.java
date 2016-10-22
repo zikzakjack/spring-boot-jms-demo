@@ -3,13 +3,13 @@ package zik.zak.jack.SpringBootDemoJms.jms;
 import zik.zak.jack.SpringBootDemoJms.domain.TransactionAlert;
 
 /**
- * Abstract the Listener class for receiving messages from Queue
+ * Abstract the Listener class for receiving messages from Topic
  * 
  * @author kalyan
  *
  */
-public interface QueueListener {
+public interface TopicSubscriber {
 
-  void receiveMessage(TransactionAlert alert);
+  void subscribe(TransactionAlert alert);
 
 }
