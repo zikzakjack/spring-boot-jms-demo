@@ -10,3 +10,4 @@ Step 3: Create 2 subscribers that listens the topic and fan out the message to t
 
 Step 4: Listen to the Queues
 
+Step 5: Send emails
